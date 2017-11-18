@@ -15,7 +15,7 @@ void setup()
  pinMode(4, OUTPUT); 
 
 } 
-int valor;
+int leds;
 int a[] = {1, 6, 26, 6, 1}; 
 int b[] = {31, 21, 21, 10, 0}; 
 int c2[] = {14, 17, 17, 10, 0}; 
@@ -97,11 +97,11 @@ void displayString(char* s)
 } 
 void loop (){
  
- if(analogRead(0)<720){valor=0;}
-  if(valor==0){    
+ if(analogRead(0)<720){leds=0;}
+  if(leds==0){    
 
- displayString("hola");
-valor=1;
+ displayString("hello world");
+leds=1;
  }
 }
 
